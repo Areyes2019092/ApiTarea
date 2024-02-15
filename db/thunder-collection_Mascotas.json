@@ -1,0 +1,89 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Mascotas",
+    "dateExported": "2024-02-09T17:48:49.679Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "50be2192-c355-48c3-9b8a-7f05382d1aff",
+            "colId": "6c5aadc2-4659-4b2c-b515-3b72389c22c4",
+            "containerId": "",
+            "name": "mascotasPost",
+            "url": "http://localhost:3000/api/mascotas",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-02-09T16:07:01.658Z",
+            "modified": "2024-02-09T16:24:01.667Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nombre\":\"Bruce\",\n  \"especie\":\"Gato\",\n  \"edad\": \"2\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "861fbb62-1958-4e41-bfa6-b97f96867b32",
+            "colId": "6c5aadc2-4659-4b2c-b515-3b72389c22c4",
+            "containerId": "",
+            "name": "mascotasGet",
+            "url": "http://localhost:3000/api/mascotas",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2024-02-09T16:11:33.080Z",
+            "modified": "2024-02-09T16:12:15.641Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "80079b23-09e4-487b-beb2-52abb78e126f",
+            "colId": "6c5aadc2-4659-4b2c-b515-3b72389c22c4",
+            "containerId": "",
+            "name": "getMascotaById",
+            "url": "http://localhost:3000/api/mascotas/65c64f72efdb117fb76a8ecc",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2024-02-09T16:13:08.254Z",
+            "modified": "2024-02-09T16:15:13.396Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "1556105a-c14f-4516-9a73-bfe9424eb21a",
+            "colId": "6c5aadc2-4659-4b2c-b515-3b72389c22c4",
+            "containerId": "",
+            "name": "mascotasPut",
+            "url": "http://localhost:3000/api/mascotas/65c64f72efdb117fb76a8ecc",
+            "method": "PUT",
+            "sortNum": 40000,
+            "created": "2024-02-09T16:25:03.676Z",
+            "modified": "2024-02-09T16:26:34.582Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nombre\":\"Zeus\",\n  \"especie\": \"Perro\",\n  \"edad\": 1\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "11264a82-0af4-4d10-b2d0-5fd03d143e0a",
+            "colId": "6c5aadc2-4659-4b2c-b515-3b72389c22c4",
+            "containerId": "",
+            "name": "mascotasDelete",
+            "url": "http://localhost:3000/api/mascotas/65c64f72efdb117fb76a8ecc",
+            "method": "DELETE",
+            "sortNum": 50000,
+            "created": "2024-02-09T16:27:07.869Z",
+            "modified": "2024-02-09T16:28:18.034Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ]
+}

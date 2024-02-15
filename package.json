@@ -1,7 +1,7 @@
 {
-  "name": "api_matutina",
+  "name": "api_2019164",
   "version": "1.0.0",
-  "description": "Primera API IN6BM",
+  "description": "Primera API 2019164",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

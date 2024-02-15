@@ -8,13 +8,15 @@ class Server {
     this.port = process.env.PORT;
     this.usuariosPath = "/api/usuarios";
     this.mascotasPath = "/api/mascotas";
+    this.loginPath = "/api/login";
 
     this.conectarDB();
 
     this.middlewares();
 
     this.routes();
-    this.routesMascotas();
+    this.routes2();
+    this.routes3;
   }
 
   async conectarDB() {
@@ -31,10 +33,10 @@ class Server {
     this.app.use(this.usuariosPath, require("../routes/user.routes"));
   }
 
-  routesMascotas() {
-    this.app.use(this.mascotasPath, require("../routes/mascota.routes"));
+  routes2() {
+    this.app.use(this.mascotasPath, require("../routes/pet.routes"));
   }
-
+  
   listen() {
     this.app.listen(this.port, () => {
       console.log("Servidor ejecutado y escuchando en el puerto", this.port);
