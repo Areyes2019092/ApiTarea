@@ -25,21 +25,7 @@ const getUsuarioByid = async (req, res) => {
     usuario,
   });
 };
-/*
-const login = async (req, res) => {
-  var resultado = "";
-  const { correo, password } = req.params;
-  const usuario = await Usuario.findOne({ correo: correo, password: password });
-  if (!usuario) {
-    resultado = "Datos incorrectos";
-  } else {
-    resultado = `Bienvenido ${usuario.nombre}`;
-  }
-  res.status(200).json({
-    resultado,
-  });
-};
-*/
+
 const usuariosPut = async (req, res) => {
   const { id } = req.params;
   const { _id, password, google, correo, ...resto } = req.body;
@@ -85,5 +71,4 @@ module.exports = {
   usuariosGet,
   getUsuarioByid,
   usuariosPut,
-  //login,
 };
