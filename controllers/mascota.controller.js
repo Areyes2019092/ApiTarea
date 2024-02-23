@@ -24,6 +24,8 @@ const getMascotaById = async (req, res) => {
   });
 };
 
+
+//Post
 const mascotasPost = async (req, res) => {
   const { nombre, especie, edad } = req.body;
   const mascota = new Mascota({ nombre, especie, edad });
